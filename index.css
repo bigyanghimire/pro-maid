@@ -1,0 +1,529 @@
+#top-logo {
+  font-family: "Pacifico";
+  font-size: 35px;
+  color: darkcyan;
+}
+.dropdown-menu {
+  background-color: #ccc !important;
+}
+.navbar {
+  background: transparent;
+  font-family: "Proxima Nova";
+  z-index: 99999;
+  position: fixed;
+  transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  margin-bottom: 0px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 1.3px;
+}
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.2s;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fec400;
+}
+.nav-link {
+  padding: 15px 5px;
+  transition: 0.2s;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #212529;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background: #fec400;
+}
+.dropdown-item {
+  color: white !important;
+  font-size: 16px;
+  font-family: "Proxima Nova";
+}
+.call {
+  font-size: 19px;
+}
+#main-header {
+  margin-top: 20px;
+  font-family: "Proxima Nova";
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  margin-left: 60px;
+  font-weight: bolder;
+  letter-spacing: 0.0666667em;
+}
+#top-sub-header {
+  margin-top: 180px;
+  text-align: center;
+  margin-left: 60px;
+  color: white;
+  font-family: "cursive";
+  font-weight: bolder;
+  letter-spacing: 0.0666667em;
+}
+#sub-header {
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 60px;
+  color: white;
+  font-family: "Proxima Nova";
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+#cta-btn {
+  background-color: #e32929;
+  border: transparent;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 30px;
+
+  color: white;
+  letter-spacing: 1px;
+  font-size: 19px;
+  font-family: "Montserrat";
+  transition: 0.7s;
+}
+#cta-btn:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #ff4924;
+  border: 1px solid #ff4924;
+}
+#top-title {
+  margin-top: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.main {
+  background: url("main2.jpg") no-repeat;
+  /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
+  background-size: 100% 100%;
+  height: 750px;
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  -moz-transition: all 3s ease-in-out;
+  position: relative;
+
+  transition: all 3s ease-in-out;
+  background: rgba(0, 0, 0, 0, 0.5);
+  margin-top: 0px;
+  text-align: center;
+  background-attachment: fixed;
+}
+.main:hover {
+  background: url("main.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 750px;
+  width: 100%;
+  -moz-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+  background: rgba(0, 0, 0, 0, 0.5);
+}
+
+.navbar .shrink {
+  height: 40px;
+  transition: all ease 0.5s;
+}
+.hey {
+  min-height: 450px;
+  width: 100%;
+  color: #212529;
+  position: relative;
+  overflow: auto;
+  margin-top: 10px;
+}
+#testimonial {
+  font-family: georgia, serif;
+  color: #777;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+.wrap-test {
+  text-align: center;
+}
+.image-person {
+  height: 140px;
+  text-align: center;
+  border-radius: 50%;
+  width: 140px;
+}
+#offer-id {
+  text-align: center;
+  font-family: "Proxima Nova";
+  margin-top: 10px;
+  font-size: 35px;
+  color: rgb(104, 168, 8);
+}
+.why-us-ul {
+  list-style: none;
+  color: #777;
+  font-family: "Proxima Nova";
+  font-weight: bold;
+}
+li {
+  padding-top: 10px;
+}
+.btn-container {
+  text-align: center;
+}
+/*SLIDESHOW starts*/
+.slide-div {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.fling-minislide {
+  width: 800px;
+  margin: 0 auto;
+  height: 0px;
+  padding-bottom: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.fling-minislide img {
+  position: absolute;
+  animation: fling-minislide 10s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #777;
+  border-top: 2px solid #777;
+  padding: 10px;
+}
+
+@keyframes fling-minislide {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.fling-minislide img:nth-child(4) {
+  animation-delay: 0s;
+}
+.fling-minislide img:nth-child(3) {
+  animation-delay: 2.5s;
+}
+.fling-minislide img:nth-child(2) {
+  animation-delay: 5s;
+}
+.fling-minislide img:nth-child(1) {
+  animation-delay: 7.5s;
+}
+/*SlideShow Ends*/
+.products {
+  margin-top: 150px;
+  text-align: center;
+}
+#hr {
+  border: 2 px solid red;
+}
+#eco-id {
+  font-family: "Proxima Nova";
+}
+#eco-icon {
+  height: 100px;
+  width: 100px;
+}
+#eco-p {
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "proxima nova";
+  font-weight: bolder;
+  font-size: 19px;
+}
+.map {
+  background-size: cover;
+
+  margin: 0 auto;
+}
+#hours-id {
+  font-family: "Proxima Nova";
+  margin-top: 10px;
+
+  color: #333;
+}
+.hours {
+  margin: 0 auto;
+  float: left;
+}
+#sister-h {
+  text-align: center;
+  font-family: "Proxima Nova";
+}
+#footer {
+  height: auto;
+  background-color: honeydew;
+}
+#social:hover {
+  cursor: pointer;
+}
+.address {
+  margin-top: 10px;
+}
+
+/*Contac form*/
+
+.form {
+  width: 380px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+#contact-h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+#form-p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+#sub-btn {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#sub-btn:hover {
+  background: #78788c;
+  color: #fff;
+}
+.form-div {
+  content: "Hi";
+  position: absolute;
+  bottom: -35px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 340px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+span {
+  margin: 0 5px 0 15px;
+}
+/*footer*/
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #5383d3;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
