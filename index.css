@@ -195,7 +195,7 @@ li {
   margin-top: 10px;
 }
 .fling-minislide {
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
   height: 0px;
   padding-bottom: 50%;
